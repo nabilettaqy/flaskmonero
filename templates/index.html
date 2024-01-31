@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monero Price</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Monero Price</h1>
+        <p class="price-text">The current price of Monero in Euro is <span class="price">{{ monero_price }} EUR</span>.</p>
+        <a class="refresh-button" href="{{ url_for('refresh') }}">Refresh</a>
+    </div>
+</body>
+</html>
+
